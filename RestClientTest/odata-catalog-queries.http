@@ -1,0 +1,14 @@
+###
+GET https://localhost:5004/catalog/categories/?$select=CategoryId,CategoryName HTTP/1.1
+
+###
+GET https://localhost:5004/catalog/products/?$filter=startswith(ProductName,'Ch') or (UnitPrice gt 50) HTTP/1.1
+
+###
+GET https://localhost:5004/catalog/products/?$orderby=UnitPrice desc,ProductName&$select=ProductId,ProductName,UnitPrice HTTP/1.1
+
+###
+GET https://localhost:5004/catalog/categories/?$select=CategoryId,CategoryName&$expand=Products HTTP/1.1
+
+###
+GET https://localhost:5004/v2/products(50)
