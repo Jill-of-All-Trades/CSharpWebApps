@@ -21,7 +21,7 @@ Some project may require extra packages. See .csproj files. If you are using Vis
 it will probably download them automatically.
 ## Installation
 
-`git clone ...`
+`git clone https://github.com/Jill-of-All-Trades/CSharpWebApps`
 
 ### - Northwind database init 
 Any **Nortwind.{SomeName}** project requires connection to Northwind database.
